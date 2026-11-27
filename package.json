@@ -1,0 +1,27 @@
+{
+    "name":  "funngro-assessment-submission",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "commonjs",
+    "scripts":  {
+                    "test":  "jest --runInBand"
+                },
+    "dependencies":  {
+                         "express":  "^4.21.2",
+                         "mongoose":  "^8.9.5",
+                         "jsonwebtoken":  "^9.0.2"
+                     },
+    "devDependencies":  {
+                            "jest":  "^30.0.0",
+                            "supertest":  "^7.1.0",
+                            "mongodb-memory-server":  "^10.1.0"
+                        },
+    "jest":  {
+                 "testEnvironment":  "node",
+                 "testMatch":  ["<rootDir>/tests/*.integration.js"],
+                 "testTimeout":  120000
+             },
+    "engines":  {
+                    "node":  "\u003e=20.19"
+                }
+}
